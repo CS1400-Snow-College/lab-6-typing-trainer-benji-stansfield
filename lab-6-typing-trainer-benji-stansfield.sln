@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab-6-typing-trainer-benji-stansfield", "lab-6-typing-trainer-benji-stansfield.csproj", "{1A55350B-2A8C-593B-4A63-B3532BAAB9E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A55350B-2A8C-593B-4A63-B3532BAAB9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A55350B-2A8C-593B-4A63-B3532BAAB9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A55350B-2A8C-593B-4A63-B3532BAAB9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A55350B-2A8C-593B-4A63-B3532BAAB9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A70AF6A-CE4B-4768-A329-B0D1CB33DED6}
+	EndGlobalSection
+EndGlobal
