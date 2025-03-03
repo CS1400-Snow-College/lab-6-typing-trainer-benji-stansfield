@@ -40,3 +40,8 @@ for (int i = 0; i < challengeText.Length; i++)
     Console.Write(expectedChar);
     Console.ForegroundColor = ConsoleColor.White;
 }
+
+/*Display number of errors*/
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine($"You completed the text with {errors} errors.");
