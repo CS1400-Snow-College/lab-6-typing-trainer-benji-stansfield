@@ -50,8 +50,12 @@ stopwatch.Stop();
 double elapsedSeconds = stopwatch.ElapsedMilliseconds/1000.0; //calculates the amount of seconds it took to type
 double accuracy = (correctInputs / challengeText.Length) * 100; //calculates the accuracy of users typing
 
+/*Words per minute*/
+string[] words = challengeText.Split(" ");
+double wpm = words.Length / (elapsedSeconds / 60);
+
 /*Display number of errors*/
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine($"You completed the text with {errors} errors for an accuacy of {accuracy}%.");
-Console.WriteLine($"Your time: {elapsedSeconds} seconds.");
+Console.WriteLine($"Your time: {elapsedSeconds} seconds ({wpm} words per minute).");
