@@ -24,6 +24,7 @@ Console.SetCursorPosition(0,0);
 
 /*Read each input*/
 int errors = 0;
+int correctInputs = 0;
 
 stopwatch.Start();
 for (int i = 0; i < challengeText.Length; i++)
@@ -34,6 +35,7 @@ for (int i = 0; i < challengeText.Length; i++)
     if (userChar == expectedChar)
     {
         Console.ForegroundColor = ConsoleColor.Green; //changes text to green if the user types what is expected
+        correctInputs++;
     }
     else
     {
@@ -45,10 +47,11 @@ for (int i = 0; i < challengeText.Length; i++)
     Console.ForegroundColor = ConsoleColor.White;
 }
 stopwatch.Stop();
-double elapsedSeconds = stopwatch.ElapsedMilliseconds/1000.0;
+double elapsedSeconds = stopwatch.ElapsedMilliseconds/1000.0; //calculates the amount of seconds it took to type
+double accuracy = (correctInputs / challengeText.Length) * 100; //calculates the accuracy of users typing
 
 /*Display number of errors*/
 Console.WriteLine();
 Console.WriteLine();
-Console.WriteLine($"You completed the text with {errors} errors.");
+Console.WriteLine($"You completed the text with {errors} errors for an accuacy of {accuracy}%.");
 Console.WriteLine($"Your time: {elapsedSeconds} seconds.");
